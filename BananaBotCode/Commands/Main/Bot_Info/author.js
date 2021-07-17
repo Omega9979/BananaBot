@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 
   const embed = new Discord.MessageEmbed()
     .setTitle(`Omega9979`)
-    .attachFiles(['../../Assets/Images/banana.jpg'])
+    .attachFiles(['./BananaBotCode/Assets/Images/banana.jpg'])
     .setThumbnail('attachment://banana.jpg')
     .setDescription(`Alias: Banana`)
     .setColor("RANDOM")

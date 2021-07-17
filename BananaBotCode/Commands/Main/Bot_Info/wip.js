@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 
     const embed = new Discord.MessageEmbed()
         .setTitle(`Work in progress:`)
-        .attachFiles(['../../Assets/Images/banana.jpg'])
+        .attachFiles(['./BananaBotCode/Assets/Images/banana.jpg'])
         .setThumbnail('attachment://banana.jpg')
         .addField(`Embeds`, `Embeds for more commands and improving existing onces`, true)
         .addField(`Code`, `General improvements to the code, especially older commands`, true)

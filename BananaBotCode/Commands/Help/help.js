@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
 
   const basicHelpCommand = new Discord.MessageEmbed()
     .setTitle(`Banana Bot's Help Section`)
-    .attachFiles([`../../Assets/Images/banana.jpg`])
+    .attachFiles([`./BananaBotCode/Assets/Images/banana.jpg`])
     .setThumbnail('attachment://banana.jpg')
     .addFields(
       { name: `Which module are you asking for?`, value: `\u200B` },
@@ -21,5 +21,4 @@ exports.run = (client, message, args) => {
     .setColor("RANDOM")
 
   message.channel.send(basicHelpCommand);
-
 }
