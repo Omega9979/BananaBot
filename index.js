@@ -1,6 +1,6 @@
 // Web server
 
-const express = require('express');
+const express = require(`express`);
 const app = express();
 const port = 3000;
 
@@ -95,6 +95,4 @@ client.once('ready', async () => {
 
 })
 
-const ClientSecret = process.env['ClientSecret'] || process.env.ClientSecret;
-
-client.login(ClientSecret);
+client.login(process.env['ClientSecret'] || process.env.ClientSecret);
