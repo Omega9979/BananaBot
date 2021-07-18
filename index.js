@@ -1,10 +1,24 @@
+// Web server
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => res.send('Hello World!'));
+
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+
+
+// Actual bot 
+
 const Discord = require(`discord.js`)
 const client = new Discord.Client();
 
 fs = require("fs");
 const path = require('path');
 
-const ClientSecret = require(`./BananaBotCode/Config/ClientSecret.json`)
+require(`dotenv`).config()
+
 
 //Command Handler
 
@@ -81,4 +95,6 @@ client.once('ready', async () => {
 
 })
 
-client.login(ClientSecret.botToken);
+const ClientSecret = process.env['ClientSecret'] || process.env.ClientSecret;
+
+client.login(ClientSecret);
