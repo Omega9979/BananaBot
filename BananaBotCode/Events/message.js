@@ -4,7 +4,8 @@ const Discord = require(`discord.js`);
 
 exports.run = async (client, message) => {
     if (message.author.id === `159985870458322944`) {
-        LevelUp();
+        // LevelUp();
+        return;
     }
 
     else if (message.content.startsWith(prefix)) {
